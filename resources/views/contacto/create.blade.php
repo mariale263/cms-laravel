@@ -6,7 +6,7 @@
     margin-top: 40px;
   }
 </style>
-<div class="card uper">
+<div class="card uper row justify-content-center ">
   <div class="card-header">
     Agregar Mensaje
   </div>

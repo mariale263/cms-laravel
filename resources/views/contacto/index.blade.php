@@ -12,8 +12,11 @@
       {{ session()->get('message') }}  
     </div><br />
   @endif
-  <table class="table table-striped">
-    <thead>
+  <div class="card-header">
+    Listado
+  </div>
+  <table class="table table-striped table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl">
+    <thead class="table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl">
         <tr>
           <td>ID</td>
           <td>Nombre</td>
@@ -22,7 +25,7 @@
           <td colspan="2">Action</td>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl">
         @foreach($contact as $contacto)
         <tr>
             <td>{{$contacto->id}}</td>
