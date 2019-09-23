@@ -18,7 +18,7 @@ class ContactoController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:255',
-            'email' => 'required|max:255',
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'message' => 'required|max:5000',
             
         ]);
@@ -47,7 +47,7 @@ class ContactoController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:255',
-            'email' => 'required|max:255',
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'message' => 'required|max:5000',
         ]);
         Contacto::whereId($id)->update($validatedData);
