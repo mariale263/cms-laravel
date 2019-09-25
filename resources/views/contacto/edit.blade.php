@@ -6,9 +6,9 @@
     margin-top: 40px;
   }
 </style>
-<div class="card uper">
+<div class="card uper container">
   <div class="card-header">
-    Actualizar
+    <h4>Actualizar</h4>
   </div>
   <div class="card-body">
     @if ($errors->any())
