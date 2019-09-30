@@ -27,19 +27,19 @@
                 <td colspan="2">Action</td>
                 </tr>
             </thead>
-            <tbody class="table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl">
+            <tbody>
                 @foreach($contact as $contacto)
                 <tr>
                     <td>{{$contacto->id}}</td>
                     <td>{{$contacto->name}}</td>
                     <td>{{$contacto->email}}</td>
                     <td>{{$contacto->message}}</td>
-                    <td><a href="{{ route('contactos.edit', $contacto->id)}}" class="btn btn-primary">Editar</a></td>
+                    <td><a href="{{ route('contactos.edit', $contacto->id)}}" class="btn btn-primary fa fa-edit"></a></td>
                     <td>
                         <form action="{{ route('contactos.destroy', $contacto->id)}}" method="post">
                         @csrf
                         @method('DELETE')
-                        <button class="btn btn-danger" type="submit">Eliminar</button>
+                        <button class="btn btn-danger fa fa-trash" type="submit"></button>
                         </form>
                     </td>
                 </tr>

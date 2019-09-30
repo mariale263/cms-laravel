@@ -7,6 +7,7 @@
   }
 </style>
 <div class="card uper container">
+    <img src="" alt="">
   <div class="card-header">
     Agregar Mensaje
   </div>
@@ -38,7 +39,7 @@
               <input type="text" class="form-control" name="message"/>
           </div>
           
-          <button type="submit" class="btn btn-primary">Crear Mensaje</button>
+          <button type="submit" class="btn btn-info">Crear Mensaje</button>
       </form>
   </div>
 </div>
